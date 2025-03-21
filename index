@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Realms Forum</title>
+    
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Minecraft Realms Forum</h1>
+        <button id="newPostBtn">New Post</button>
+    </header>
+
+    <section id="announcement">
+        <h2>Announcements</h2>
+        <p>Welcome to the Minecraft Realms Forum! Stay updated with server news.</p>
+    </section>
+
+    <section id="forum">
+        <h2>Discussions</h2>
+        <ul id="postList">
+            <!-- Posts will appear here -->
+        </ul>
+    </section>
+
+    <div id="postModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Create a New Post</h2>
+            <input type="text" id="postTitle" placeholder="Title" required>
+            <textarea id="postContent" placeholder="Your post..." required></textarea>
+            <button id="postSubmit">Post</button>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript (Place before closing body tag) -->
+    <script src="script.js"></script>
+</body>
+</html>
